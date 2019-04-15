@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>爱宠之家论坛</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
+	
+</head>
+<style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .pok_plogo{
+        height: 90px;
+        width: 240px;
+        padding-bottom: 28px;
+        
+    }
+   /* .pok_pbox{
+      width: 100%;
+      height: 30px;
+      background: #f8f8f8;
+      margin: 0;   
+    }*/
+  header>.navbar {
+    position: relative;
+    min-height: 50px; 
+    border: none;
+    margin: 0;
+    font-size: 18px;
+    /*box-shadow: 3px 3px 3px #888888;*/
+}
+.navbar-default .navbar-nav>li>a {
+    color: #b9b9b9;
+    line-height: 50px;
+}
+#pok_pa{
+  color: #de001c;
+}
+#pok_pb{
+  color: #de001c;
+}
+.pok_cate_header{
+	height: 50px;
+	width: 100%;
+	background: #f69844;
+}
+.pok_cate_header>p{
+	font-size:30px;
+	color: white;
+	padding: 5px 0px 0px 30px;
+}
+.myform  {
+  background: #f9f9f9;
+  padding-left: 10px;
+}
+.mydiv{
+  height: 344px;
+}
+.pok_psk{
+  height: 100px;
+  margin-top: 50px;
+}
+.pok_show{
+	height: 330px;
+}
+.pok_top_take{
+	background: #F69844;
+	font-size:30px;
+	color: white;
+	padding: 5px 0px 0px 30px;
+
+</style>
+<body>
+	
+    <header class="col-xm-12 container" >
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html"><img class="pok_plogo" src="img/logo01.jpg" alt=""></a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a id="pok_pa" href="./index.html">爱宠之家首页</a></li>
+                  <li class="dropdown">
+                    <a href="./mall.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">宠物商城 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="./mall.html">狗狗</a></li>
+                      <li><a href="./mall.html">猫咪</a></li>
+                      <li><a href="./mall.html">水族</a></li>                      
+                      <li><a href="./mall.html">小宠</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="./mall.html">上门服务</a></li>              
+                    </ul>
+                  </li>
+                  <li><a href="./forum.html">宠物论坛</a></li>
+                  <li><a href="./encyclopedia.html">宠物百科</a></li>                 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">            
+                  <li class="dropdown">
+                    <a id="pok_pb" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >联系我们<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">微博</a></li>
+                      <li><a href="#">微信公众号</a></li>
+                      <li><a href="#">电话</a></li>
+                      <li><a href="#">邮箱</a></li>                      
+                    </ul>
+                  </li>
+                  <li><a href="./index.html">留言板</a></li> 
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+          <div class="pok_pbox"></div>
+    </header>
+	<nav class="container pok_top col-xm-12">
+		<div class="pok_top_take">
+			<p>爱宠图片展示</p>
+		</div>
+		<div id="carousel-example-generic" class="carousel slide col-xs-12 col-sm-4" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+			  <img src="img/jinmao_pok.jpeg" alt="...">
+			</div>
+			<div class="item">
+			  <img src="img/douniu_pok.jpeg" alt="...">
+			</div>
+			<div class="item">
+			  <img src="img/jiwawa_pok.jpeg" alt="...">
+			</div>
+		  </div>
+		
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		  </a>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="row ">
+				<div class="thumbnail pok_show">
+				  <img src="img/pok_people5.jpg" alt="...">
+				  <div class="caption">
+					<h3>飞天神狗lucky</h3>
+					<p>期初的时候我是通过网络视频，看见那些狗狗很可爱很逗，所以我决定养一只温顺的金毛。买回来的时候一个多月大，特别爱吃爱睡，而且样子很可爱。慢慢地我就开始教它了，
+					教它坐下、趴下、握手和找东西等（有东西吃才听话），很快就学会了，最重要的是后来它从不会在家里大小便了！</p>
+					<p><a href="#" class="btn btn-primary" role="button">点赞</a> <a href="#" class="btn btn-default" role="button">加好友</a></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<div class="row ">
+				<div class="thumbnail pok_show">
+				  <img src="img/pok_people6.jpg" alt="...">
+				  <div class="caption">
+					<h3>雨神的皇家宠物狗</h3>
+					<p>我觉得它是最萌最可爱的，每当看路上情侣拉着宠物去散步，或者单身汪拉着宠物去散步的时候，我都要多回头看看这些小可爱，它在你面前乱蹦乱跳，在你面前撒娇时候，超暖心的，
+					特别它懂你不舒服它呵护着你，你被别人欺负了它维护你，好像小孩一样，超级可爱,遇见它是我今生的幸运</p>
+					<p><a href="#" class="btn btn-primary" role="button">点赞</a> <a href="#" class="btn btn-default" role="button">加好友</a></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</nav>
+    <main class="col-xm-12 container">
+		<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">爱宠之家</a></li>
+					<li class="breadcrumb-item active" aria-current="page">爱宠之家论坛</li>
+				</ol>
+			</nav>
+		<div class="pok_cate_header">
+				<p>宠物之家论坛</p>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">人气TOP09</div>
+			<div class="panel-body">
+				<div class="media">
+					<div class="media-left media-middle">
+						<a href="#">
+							<img class="media-object" src="img/pok_09.jpeg" alt="...">
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading"><a href="#">腊肠犬</a></h4>
+						腊肠犬（Dachshund）是一种短腿，长身的猎犬。其名源于德国，原意"獾狗"。
+						此品种被发展为嗅猎，追踪，及捕杀獾类及其他穴居的动物．有意思的是，虽然"Dachshund"是一个德语单词，但是它在德国并不常用，德国人通常叫它Dackel或Teckel。
+						原产于德国，现遍及各地。
+						<h6>标签：
+							<span class="label label-info">短腿长身</span>
+							<span class="label label-info">原产德国</span>
+							<span class="label label-info">天性独立</span>
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+				<div class="panel-heading">人气TOP10</div>
+				<div class="panel-body">
+					<div class="media">
+						<div class="media-left media-middle">
+							<a href="#">
+								<img class="media-object" src="img/pok_10.jpeg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">英国斗牛犬</a></h4>
+							英国斗牛犬（Bulldog）又名老虎犬、英国斗牛，是一个源于英国的狗品种，祖先据说是马士提夫獒犬和牛头梗结合繁衍而成。
+							其面部有皱褶，成年犬大约有18-25Kg，身高51-64厘米，属于中型犬。
+							斗牛犬最初用于挑逗公牛，在19世纪该运动被禁止后，斗牛犬转变为观赏犬，现有法国斗牛犬、美国斗牛犬等类型。
+							<h6>标签：
+								<span class="label label-info">原产英国</span>
+								<span class="label label-info">观赏犬</span>
+								<span class="label label-info">老虎犬</span>
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="panel panel-default">
+				<div class="panel-heading">人气TOP11</div>
+				<div class="panel-body">
+					<div class="media">
+						<div class="media-left media-middle">
+							<a href="#">
+								<img class="media-object" src="img/pok_11.jpeg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">金毛</a></h4>
+							金毛寻回犬（Golden Retriever）是单猎犬，比较流行的狗的品种。在猎捕野禽的寻回犬中培养出来的，游泳的续航力极佳。
+							金毛寻回犬是最常见的家犬之一，它很容易养，有耐心并且对主人要求不多，只要定期运动，食物和兽医体检就可以了。
+							它属于匀称、有力、活泼的一个犬种，特征是稳固、身体各部位配合合理，腿既不太长也不笨拙，表情友善，个性热情、机警、自信而且不怕生，性格讨人喜欢。
+							<h6>标签：
+								<span class="label label-info">单猎犬</span>
+								<span class="label label-info">容易养活</span>
+								<span class="label label-info">个性热情</span>
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="panel panel-default">
+				<div class="panel-heading">人气TOP12</div>
+				<div class="panel-body">
+					<div class="media">
+						<div class="media-left media-middle">
+							<a href="#">
+								<img class="media-object" src="img/pok_12.jpeg" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">柯利犬</a></h4>
+							粗毛柯利牧羊犬性情优良，容易亲近，在室外或动力充沛。对主人感情丰富，对陌生人警戒心强。此犬擅长社交，平常完全不显露软弱或攻击性的一面。
+							粗毛牧羊犬具有表情丰富的耳朵，休息时耳朵伸直，警戒时耳朵会往前倾呈半直立状。听觉灵敏，距半公里之外的声音也能听见。
+							<h6>标签：
+								<span class="label label-info">性情优良</span>
+								<span class="label label-info">容易亲近</span>
+								<span class="label label-info">听觉灵敏</span>
+							</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+    </main>
+	<nav aria-label="Page navigation example" class="col-xm-12 container">
+	  <ul class="pagination">
+		<li class="page-item">
+		  <a class="page-link" href="forum2.html" aria-label="Previous">
+			<span aria-hidden="true">&laquo;</span>
+		  </a>
+		</li>
+		<li class="page-item"><a class="page-link" href="forum.html">1</a></li>
+		<li class="page-item"><a class="page-link" href="forum2.html">2</a></li>
+		<li class="page-item"><a class="page-link" href="forum3.html">3</a></li>
+		<li class="page-item">
+		  <a class="page-link" href="forum3.html" aria-label="Next">
+			<span aria-hidden="true">&raquo;</span>
+		  </a>
+		</li>
+	  </ul>
+	</nav>
+	<footer class="col-xm-12 container">
+        <div class="col-xm-12 col-sm-6 myform" >
+            <form class="form-horizontal myform">
+                <div class="form-group">           
+                    <h3 for="inputEmail3" class=" col-sm-3 control-label">联系我们:</h3>                              
+                    </div>     
+                    <div class="form-group">           
+                    <label for="inputEmail3" class="col-sm-3 control-label">您的姓名:</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="inputEmail3">                                                           
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="  inputPassword3" class="col-sm-3 control-label">您的Email:</label>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" id="inputPassword3" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-3 control-label">想对你说:</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-4">
+                        <button type="submit" class="btn btn-success">提交</button>
+                    </div>
+                </div>               
+            </form>
+        </div>
+        <div class="col-xs-12  col-sm-6 myform mydiv">
+            <h2>我们的目标</h2>
+            <h4>真诚为您服务</h4>
+            <h2>联系我们</h2>
+            <h4>深圳市南山区大冲国际中心</h4>
+            <h4>电话:0000000</h4>
+            <h4>Email:11111@163.com</h4>
+        </div>
+    </footer>
+</body>
+</html>
